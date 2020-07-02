@@ -19,19 +19,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style >
-        .EButtons{
-            text-align: Right;
-        }
-
-        .title{
-            text-align: Left;
-        }
+        
 
         * {
              box-sizing: border-box;
           }
 
-        body{ font: 14px sans-serif; text-align: center; }
+        body{ 
+            font: 14px sans-serif; 
+            text-align: center; 
+            }
 
         header {
             background-color: #666;
@@ -43,7 +40,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         nav {
             float: left;
             width: 30%;
-            height: 500px; /* only for demonstration, should be removed */
+            height: 300px;  /*only for demonstration, should be removed */
             background: #ccc;
             padding: 20px;
             }
@@ -89,17 +86,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
 
     <header>
-        <div class="title">
+        <div class="title" style="text-align: left ">
             <h2>Reckon</h2>
         </div>
-        <div class="EButtons">
-            <table style="width:40%">
-            <tr>
-                
-                <td><a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></td>
-                <td><a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a></td>
-            </tr>
-            </table>
+        <div class="RESET" style="float: right " >  
+                <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+
+        </div>
+
+        <div class="LOGOUT" style="float: right ">
+                <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
         </div> 
     </header>
 
